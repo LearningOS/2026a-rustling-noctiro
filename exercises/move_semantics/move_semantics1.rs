@@ -1,13 +1,12 @@
 // move_semantics1.rs
-//
-// Execute `rustlings hint move_semantics1` or press `h` in watch mode
-// for a hint.
+// Execute `rustlings hint move_semantics1` or press `h` in watch mode for a hint.
 
+// TODO: Complete this exercise.
 
 fn main() {
     let vec0 = Vec::new();
 
-    let mut vec1 = fill_vec(vec0);
+    let vec1 = fill_vec(vec0);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
 

@@ -1,13 +1,11 @@
 // primitive_types3.rs
-//
 // Create an array with at least 100 elements in it where the ??? is.
-//
-// Execute `rustlings hint primitive_types3` or press `h` in watch mode
-// for a hint.
+// Execute `rustlings hint primitive_types3` or press `h` in watch mode for a hint.
 
+// TODO: Complete this exercise.
 
 fn main() {
-    let a = [0; 1000];
+    let a = ???
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");

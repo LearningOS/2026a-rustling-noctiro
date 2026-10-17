@@ -1,11 +1,8 @@
 // primitive_types1.rs
-//
-// Fill in the rest of the line that has code missing! No hints, there's no
-// tricks, just get used to typing these :)
-//
-// Execute `rustlings hint primitive_types1` or press `h` in watch mode
-// for a hint.
+// Fill in the rest of the line that has code missing!
+// No hints, there's no tricks, just get used to typing these :)
 
+// TODO: Complete this exercise.
 
 fn main() {
     // Booleans (`bool`)
@@ -15,7 +12,7 @@ fn main() {
         println!("Good morning!");
     }
 
-    let is_evening = false;// Finish the rest of this line like the example! Or make it be false!
+    let // Finish the rest of this line like the example! Or make it be false!
     if is_evening {
         println!("Good evening!");
     }

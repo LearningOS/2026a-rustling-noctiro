@@ -135,3 +135,8 @@ try {
         [IO.File]::WriteAllBytes($config, $original)
     }
 }
+
+# The last scenario intentionally leaves the mocked native exit code at 44.
+# GitHub's PowerShell wrapper reads LASTEXITCODE after this script returns.
+# Clear it only after every assertion and cleanup has completed successfully.
+$global:LASTEXITCODE = 0
