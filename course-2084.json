@@ -2,219 +2,219 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-noctiro",
-  "commit": "ba131d9f4c29d0f9f1652c6ddbd7aa89eb190867",
-  "score": 30,
+  "commit": "7a6931367604fed0cdb615165e8eb57992257838",
+  "score": 0,
   "totalScore": 110,
   "exercises": [
     {
       "name": "intro2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables3",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables4",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables5",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "variables6",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "functions1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "functions2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "functions3",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "functions4",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "functions5",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "if1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "if2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "if3",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "quiz1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types3",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types4",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types5",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "primitive_types6",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "vecs1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "vecs2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics1",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics2",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics3",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics4",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics5",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "move_semantics6",
       "max": 1,
-      "score": 1,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "fail",
+      "exitCode": 101
     },
     {
       "name": "structs1",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "noctiro",
-  "runId": "39022622266",
+  "runId": "39023771526",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
