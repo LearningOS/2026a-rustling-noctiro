@@ -5,7 +5,7 @@
 //
 // Make me compile and pass the test!
 //
-// Execute `rustlings hint vecs1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint vecs1` or press `h` in watch mode for a hint.
 
 
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
@@ -25,3 +25,5 @@ mod tests {
         assert_eq!(a, v[..]);
     }
 }
+
+fn main() {}

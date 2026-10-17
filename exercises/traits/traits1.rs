@@ -4,10 +4,10 @@
 // `AppendBar` for the type `String`. The trait AppendBar has only one function,
 // which appends "Bar" to any object implementing this trait.
 //
-// Execute `rustlings hint traits1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint traits1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 trait AppendBar {
     fn append_bar(self) -> Self;

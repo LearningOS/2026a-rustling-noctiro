@@ -19,10 +19,10 @@
 // code to yourself! If you cannot prove the memory safety and soundness of
 // your own code, take a step back and use safe code instead!
 //
-// Execute `rustlings hint tests5` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests5` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 /// # Safety
 ///
@@ -49,3 +49,5 @@ mod tests {
         assert!(t == 0xAABBCCDD);
     }
 }
+
+fn main() {}

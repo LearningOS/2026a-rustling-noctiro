@@ -1,9 +1,9 @@
 // strings3.rs
 //
-// Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint strings3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from both ends of a string!
@@ -43,3 +43,5 @@ mod tests {
         assert_eq!(replace_me("I love to look at cars"), "I love to look at balloons");
     }
 }
+
+fn main() {}

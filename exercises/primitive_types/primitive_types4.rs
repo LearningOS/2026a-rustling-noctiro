@@ -2,7 +2,7 @@
 //
 // Get a slice out of Array a where the ??? is so that the test passes.
 //
-// Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand
+// Execute `rustlings hint primitive_types4` or press `h` in watch mode
 // for a hint.
 
 
@@ -14,3 +14,5 @@ fn slice_out_of_array() {
 
     assert_eq!([2, 3, 4], nice_slice)
 }
+
+fn main() {}

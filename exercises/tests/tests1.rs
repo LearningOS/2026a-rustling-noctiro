@@ -7,10 +7,10 @@
 // This test has a problem with it -- make the test compile! Make the test pass!
 // Make the test fail!
 //
-// Execute `rustlings hint tests1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[cfg(test)]
 mod tests {
@@ -19,3 +19,5 @@ mod tests {
         assert!();
     }
 }
+
+fn main() {}

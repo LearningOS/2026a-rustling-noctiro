@@ -5,10 +5,10 @@
 //
 // Consider what you can add to the Licensed trait.
 //
-// Execute `rustlings hint traits3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint traits3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub trait Licensed {
     fn licensing_info(&self) -> String;
@@ -40,3 +40,5 @@ mod tests {
         assert_eq!(other_software.licensing_info(), licensing_info);
     }
 }
+
+fn main() {}

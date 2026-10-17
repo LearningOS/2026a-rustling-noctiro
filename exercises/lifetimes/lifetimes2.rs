@@ -3,10 +3,10 @@
 // So if the compiler is just validating the references passed to the annotated
 // parameters and the return type, what do we need to change?
 //
-// Execute `rustlings hint lifetimes2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint lifetimes2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {

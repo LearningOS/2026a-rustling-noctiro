@@ -1,9 +1,9 @@
 // options3.rs
 //
-// Execute `rustlings hint options3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint options3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 struct Point {
     x: i32,

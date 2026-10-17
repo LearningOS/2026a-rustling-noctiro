@@ -2,10 +2,10 @@
 //
 // Address all the TODOs to make the tests pass!
 //
-// Execute `rustlings hint structs1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint structs1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 struct ColorClassicStruct {
     // TODO: Something goes here
@@ -49,3 +49,5 @@ mod tests {
         assert_eq!(message, "UnitLikeStructs are fun!");
     }
 }
+
+fn main() {}

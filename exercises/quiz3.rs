@@ -14,9 +14,9 @@
 // to support alphabetical report cards. Change the Grade in the second test to
 // "A+" to show that your changes allow alphabetical grades.
 //
-// Execute `rustlings hint quiz3` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint quiz3` or press `h` in watch mode for a hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub struct ReportCard {
     pub grade: f32,
@@ -62,3 +62,5 @@ mod tests {
         );
     }
 }
+
+fn main() {}

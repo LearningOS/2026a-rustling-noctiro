@@ -4,7 +4,7 @@
 // correctly for a type, the Into trait should work conversely. You can read
 // more about it at https://doc.rust-lang.org/std/convert/trait.From.html
 //
-// Execute `rustlings hint from_into` or use the `hint` watch subcommand for a
+// Execute `rustlings hint from_into` or press `h` in watch mode for a
 // hint.
 
 #[derive(Debug)]
@@ -40,7 +40,7 @@ impl Default for Person {
 // If while parsing the age, something goes wrong, then return the default of
 // Person Otherwise, then return an instantiated Person object with the results
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {

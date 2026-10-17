@@ -3,10 +3,10 @@
 // This powerful wrapper provides the ability to store a positive integer value.
 // Rewrite it using generics so that it supports wrapping ANY type.
 //
-// Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint generics2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 struct Wrapper {
     value: u32,
@@ -32,3 +32,5 @@ mod tests {
         assert_eq!(Wrapper::new("Foo").value, "Foo");
     }
 }
+
+fn main() {}

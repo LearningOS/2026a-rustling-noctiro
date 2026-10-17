@@ -8,10 +8,10 @@
 // Only the two iterator methods (count_iterator and count_collection_iterator)
 // need to be modified.
 //
-// Execute `rustlings hint iterators5` or use the `hint` watch subcommand for a
+// Execute `rustlings hint iterators5` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::collections::HashMap;
 
@@ -154,3 +154,5 @@ mod tests {
         vec![map, other]
     }
 }
+
+fn main() {}

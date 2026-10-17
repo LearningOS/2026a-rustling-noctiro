@@ -2,9 +2,9 @@ name: Check course automation
 
 on:
   push:
-    paths: ['.github/**', 'enroll.py', 'course.json']
+    paths: ['.github/**', 'tests/**', '.devcontainer/**', '.gitpod.yml', 'enroll.py', 'course.json', 'Cargo.toml', 'Cargo.lock', 'info.toml', 'rust-toolchain.toml', 'setup*', 'exercises/tests/build.rs']
   pull_request:
-    paths: ['.github/**', 'enroll.py', 'course.json']
+    paths: ['.github/**', 'tests/**', '.devcontainer/**', '.gitpod.yml', 'enroll.py', 'course.json', 'Cargo.toml', 'Cargo.lock', 'info.toml', 'rust-toolchain.toml', 'setup*', 'exercises/tests/build.rs']
   workflow_dispatch:
 
 permissions:
@@ -22,4 +22,19 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+      - uses: dtolnay/rust-toolchain@6bed0761d98439e5a578e2877258200ad565ba87 # stable
+        with:
+          toolchain: 1.99.1
+          components: clippy
       - run: python3 -m unittest discover -s .github/tests -v
+
+  windows-setup:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check PowerShell setup without installing native tools
+        shell: pwsh
+        run: ./tests/setup_environment.ps1

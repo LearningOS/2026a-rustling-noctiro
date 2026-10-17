@@ -2,10 +2,10 @@
 //
 // Address all the TODOs to make the tests pass!
 //
-// Execute `rustlings hint enums3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint enums3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 enum Message {
     // TODO: implement the message variant types based on their usage below
@@ -70,3 +70,5 @@ mod tests {
         assert_eq!(state.message, "hello world");
     }
 }
+
+fn main() {}

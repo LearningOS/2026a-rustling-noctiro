@@ -20,7 +20,7 @@
 //
 // No hints this time!
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub enum Command {
     Uppercase,
@@ -62,3 +62,5 @@ mod tests {
         assert_eq!(output[3], "barbarbarbarbarbar");
     }
 }
+
+fn main() {}

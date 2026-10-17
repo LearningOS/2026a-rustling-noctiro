@@ -31,10 +31,10 @@
 // You should NOT modify this file. Modify `build.rs` in the same directory
 // to pass this exercise.
 //
-// Execute `rustlings hint tests7` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests7` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn main() {}
 

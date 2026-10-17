@@ -4,10 +4,10 @@
 // unsafe functions. Fix all the question marks and todos to make the test
 // pass.
 //
-// Execute `rustlings hint tests6` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests6` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 struct Foo {
     a: u128,
@@ -43,3 +43,5 @@ mod tests {
         assert!(ret.b == Some("hello".to_owned()));
     }
 }
+
+fn main() {}

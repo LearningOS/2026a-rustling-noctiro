@@ -2,7 +2,7 @@
 //
 // No hints this time! ;)
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(Debug)]
 enum Message {

@@ -1,9 +1,9 @@
 // enums2.rs
 //
-// Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint enums2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(Debug)]
 enum Message {

@@ -1,6 +1,6 @@
 // variables3.rs
 //
-// Execute `rustlings hint variables3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint variables3` or press `h` in watch mode for a
 // hint.
 
 

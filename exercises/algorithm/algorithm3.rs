@@ -3,7 +3,7 @@
 	This problem requires you to implement a sorting algorithm
 	you can use bubble sorting, insertion sorting, heap sorting, etc.
 */
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn sort<T>(array: &mut [T]){
 	//TODO
@@ -31,3 +31,5 @@ mod tests {
         assert_eq!(vec, vec![11, 22, 33, 44, 55, 66, 77, 88, 99]);
     }
 }
+
+fn main() {}

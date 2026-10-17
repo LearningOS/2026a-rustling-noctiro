@@ -5,7 +5,7 @@
 //
 // Make me pass the test!
 //
-// Execute `rustlings hint vecs2` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint vecs2` or press `h` in watch mode for a hint.
 
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
@@ -47,3 +47,5 @@ mod tests {
         assert_eq!(ans, v.iter().map(|x| x * 2).collect::<Vec<i32>>());
     }
 }
+
+fn main() {}

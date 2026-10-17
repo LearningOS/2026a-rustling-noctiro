@@ -2,7 +2,7 @@
 	heap
 	This question requires you to implement a binary heap function
 */
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::cmp::Ord;
 use std::default::Default;
@@ -152,3 +152,5 @@ mod tests {
         assert_eq!(heap.next(), Some(2));
     }
 }
+
+fn main() {}

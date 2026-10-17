@@ -2,10 +2,10 @@
 //
 // Make me compile without changing the function signature!
 //
-// Execute `rustlings hint strings2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint strings2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn main() {
     let word = String::from("green"); // Try not changing this line :)

@@ -4,10 +4,10 @@
 // about them at https://doc.rust-lang.org/std/convert/trait.AsRef.html and
 // https://doc.rust-lang.org/std/convert/trait.AsMut.html, respectively.
 //
-// Execute `rustlings hint as_ref_mut` or use the `hint` watch subcommand for a
+// Execute `rustlings hint as_ref_mut` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 // Obtain the number of bytes (not characters) in the given argument.
 // TODO: Add the AsRef trait appropriately as a trait bound.
@@ -63,3 +63,5 @@ mod tests {
         assert_eq!(*num, 9);
     }
 }
+
+fn main() {}

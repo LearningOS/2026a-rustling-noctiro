@@ -11,10 +11,10 @@
 //
 // Make me pass the tests!
 //
-// Execute `rustlings hint hashmaps3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint hashmaps3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::collections::HashMap;
 
@@ -84,3 +84,5 @@ mod tests {
         assert_eq!(team.goals_conceded, 2);
     }
 }
+
+fn main() {}

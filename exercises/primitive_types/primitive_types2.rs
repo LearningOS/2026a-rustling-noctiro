@@ -3,7 +3,7 @@
 // Fill in the rest of the line that has code missing! No hints, there's no
 // tricks, just get used to typing these :)
 //
-// Execute `rustlings hint primitive_types2` or use the `hint` watch subcommand
+// Execute `rustlings hint primitive_types2` or press `h` in watch mode
 // for a hint.
 
 

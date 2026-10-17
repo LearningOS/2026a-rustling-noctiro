@@ -4,10 +4,10 @@
 // defined the Package struct and we want to test some logic attached to it.
 // Make the code compile and the tests pass!
 //
-// Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint structs3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(Debug)]
 struct Package {
@@ -84,3 +84,5 @@ mod tests {
         assert_eq!(package.get_fees(cents_per_gram * 2), 9000);
     }
 }
+
+fn main() {}

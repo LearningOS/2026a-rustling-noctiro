@@ -4,10 +4,10 @@
 //
 // Don't change any line other than the marked one.
 //
-// Execute `rustlings hint traits4` or use the `hint` watch subcommand for a
+// Execute `rustlings hint traits4` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub trait Licensed {
     fn licensing_info(&self) -> String {
@@ -47,3 +47,5 @@ mod tests {
         assert!(compare_license_types(other_software, some_software));
     }
 }
+
+fn main() {}

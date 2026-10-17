@@ -2,7 +2,7 @@
 //
 // Destructure the `cat` tuple so that the println will work.
 //
-// Execute `rustlings hint primitive_types5` or use the `hint` watch subcommand
+// Execute `rustlings hint primitive_types5` or press `h` in watch mode
 // for a hint.
 
 

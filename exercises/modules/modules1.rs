@@ -1,9 +1,9 @@
 // modules1.rs
 //
-// Execute `rustlings hint modules1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint modules1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 mod sausage_factory {
     // Don't let anybody outside of this module see this!

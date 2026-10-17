@@ -4,10 +4,10 @@
 // You need to add some code to `build.rs` to make both this exercise and
 // the previous one work.
 //
-// Execute `rustlings hint tests8` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests8` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn main() {}
 

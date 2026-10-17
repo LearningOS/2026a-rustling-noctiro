@@ -1,31 +1,125 @@
-[package]
-name = "rustlings"
-description = "Small exercises to get you used to reading and writing Rust code!"
-version = "5.5.1"
-authors = [
-  "Liv <mokou@fastmail.com>",
-  "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
+# Generated target list: run `rustlings dev update` after changing info.toml.
+bin = [
+  { name = "intro2", path = "exercises/intro/intro2.rs" },
+  { name = "variables1", path = "exercises/variables/variables1.rs" },
+  { name = "variables2", path = "exercises/variables/variables2.rs" },
+  { name = "variables3", path = "exercises/variables/variables3.rs" },
+  { name = "variables4", path = "exercises/variables/variables4.rs" },
+  { name = "variables5", path = "exercises/variables/variables5.rs" },
+  { name = "variables6", path = "exercises/variables/variables6.rs" },
+  { name = "functions1", path = "exercises/functions/functions1.rs" },
+  { name = "functions2", path = "exercises/functions/functions2.rs" },
+  { name = "functions3", path = "exercises/functions/functions3.rs" },
+  { name = "functions4", path = "exercises/functions/functions4.rs" },
+  { name = "functions5", path = "exercises/functions/functions5.rs" },
+  { name = "if1", path = "exercises/if/if1.rs" },
+  { name = "if2", path = "exercises/if/if2.rs" },
+  { name = "if3", path = "exercises/if/if3.rs" },
+  { name = "quiz1", path = "exercises/quiz1.rs" },
+  { name = "primitive_types1", path = "exercises/primitive_types/primitive_types1.rs" },
+  { name = "primitive_types2", path = "exercises/primitive_types/primitive_types2.rs" },
+  { name = "primitive_types3", path = "exercises/primitive_types/primitive_types3.rs" },
+  { name = "primitive_types4", path = "exercises/primitive_types/primitive_types4.rs" },
+  { name = "primitive_types5", path = "exercises/primitive_types/primitive_types5.rs" },
+  { name = "primitive_types6", path = "exercises/primitive_types/primitive_types6.rs" },
+  { name = "vecs1", path = "exercises/vecs/vecs1.rs" },
+  { name = "vecs2", path = "exercises/vecs/vecs2.rs" },
+  { name = "move_semantics1", path = "exercises/move_semantics/move_semantics1.rs" },
+  { name = "move_semantics2", path = "exercises/move_semantics/move_semantics2.rs" },
+  { name = "move_semantics3", path = "exercises/move_semantics/move_semantics3.rs" },
+  { name = "move_semantics4", path = "exercises/move_semantics/move_semantics4.rs" },
+  { name = "move_semantics5", path = "exercises/move_semantics/move_semantics5.rs" },
+  { name = "move_semantics6", path = "exercises/move_semantics/move_semantics6.rs" },
+  { name = "structs1", path = "exercises/structs/structs1.rs" },
+  { name = "structs2", path = "exercises/structs/structs2.rs" },
+  { name = "structs3", path = "exercises/structs/structs3.rs" },
+  { name = "enums1", path = "exercises/enums/enums1.rs" },
+  { name = "enums2", path = "exercises/enums/enums2.rs" },
+  { name = "enums3", path = "exercises/enums/enums3.rs" },
+  { name = "strings1", path = "exercises/strings/strings1.rs" },
+  { name = "strings2", path = "exercises/strings/strings2.rs" },
+  { name = "strings3", path = "exercises/strings/strings3.rs" },
+  { name = "strings4", path = "exercises/strings/strings4.rs" },
+  { name = "modules1", path = "exercises/modules/modules1.rs" },
+  { name = "modules2", path = "exercises/modules/modules2.rs" },
+  { name = "modules3", path = "exercises/modules/modules3.rs" },
+  { name = "hashmaps1", path = "exercises/hashmaps/hashmaps1.rs" },
+  { name = "hashmaps2", path = "exercises/hashmaps/hashmaps2.rs" },
+  { name = "hashmaps3", path = "exercises/hashmaps/hashmaps3.rs" },
+  { name = "quiz2", path = "exercises/quiz2.rs" },
+  { name = "options1", path = "exercises/options/options1.rs" },
+  { name = "options2", path = "exercises/options/options2.rs" },
+  { name = "options3", path = "exercises/options/options3.rs" },
+  { name = "errors1", path = "exercises/error_handling/errors1.rs" },
+  { name = "errors2", path = "exercises/error_handling/errors2.rs" },
+  { name = "errors3", path = "exercises/error_handling/errors3.rs" },
+  { name = "errors4", path = "exercises/error_handling/errors4.rs" },
+  { name = "errors5", path = "exercises/error_handling/errors5.rs" },
+  { name = "errors6", path = "exercises/error_handling/errors6.rs" },
+  { name = "generics1", path = "exercises/generics/generics1.rs" },
+  { name = "generics2", path = "exercises/generics/generics2.rs" },
+  { name = "traits1", path = "exercises/traits/traits1.rs" },
+  { name = "traits2", path = "exercises/traits/traits2.rs" },
+  { name = "traits3", path = "exercises/traits/traits3.rs" },
+  { name = "traits4", path = "exercises/traits/traits4.rs" },
+  { name = "traits5", path = "exercises/traits/traits5.rs" },
+  { name = "quiz3", path = "exercises/quiz3.rs" },
+  { name = "lifetimes1", path = "exercises/lifetimes/lifetimes1.rs" },
+  { name = "lifetimes2", path = "exercises/lifetimes/lifetimes2.rs" },
+  { name = "lifetimes3", path = "exercises/lifetimes/lifetimes3.rs" },
+  { name = "tests1", path = "exercises/tests/tests1.rs" },
+  { name = "tests2", path = "exercises/tests/tests2.rs" },
+  { name = "tests3", path = "exercises/tests/tests3.rs" },
+  { name = "tests4", path = "exercises/tests/tests4.rs" },
+  { name = "iterators1", path = "exercises/iterators/iterators1.rs" },
+  { name = "iterators2", path = "exercises/iterators/iterators2.rs" },
+  { name = "iterators3", path = "exercises/iterators/iterators3.rs" },
+  { name = "iterators4", path = "exercises/iterators/iterators4.rs" },
+  { name = "iterators5", path = "exercises/iterators/iterators5.rs" },
+  { name = "box1", path = "exercises/smart_pointers/box1.rs" },
+  { name = "rc1", path = "exercises/smart_pointers/rc1.rs" },
+  { name = "arc1", path = "exercises/smart_pointers/arc1.rs" },
+  { name = "cow1", path = "exercises/smart_pointers/cow1.rs" },
+  { name = "threads1", path = "exercises/threads/threads1.rs" },
+  { name = "threads2", path = "exercises/threads/threads2.rs" },
+  { name = "threads3", path = "exercises/threads/threads3.rs" },
+  { name = "macros1", path = "exercises/macros/macros1.rs" },
+  { name = "macros2", path = "exercises/macros/macros2.rs" },
+  { name = "macros3", path = "exercises/macros/macros3.rs" },
+  { name = "macros4", path = "exercises/macros/macros4.rs" },
+  { name = "clippy1", path = "exercises/clippy/clippy1.rs" },
+  { name = "clippy2", path = "exercises/clippy/clippy2.rs" },
+  { name = "clippy3", path = "exercises/clippy/clippy3.rs" },
+  { name = "using_as", path = "exercises/conversions/using_as.rs" },
+  { name = "from_into", path = "exercises/conversions/from_into.rs" },
+  { name = "from_str", path = "exercises/conversions/from_str.rs" },
+  { name = "try_from_into", path = "exercises/conversions/try_from_into.rs" },
+  { name = "as_ref_mut", path = "exercises/conversions/as_ref_mut.rs" },
+  { name = "tests5", path = "exercises/tests/tests5.rs" },
+  { name = "tests6", path = "exercises/tests/tests6.rs" },
+  { name = "tests7", path = "exercises/tests/tests7.rs" },
+  { name = "tests8", path = "exercises/tests/tests8.rs" },
+  { name = "tests9", path = "exercises/tests/tests9.rs" },
+  { name = "algorithm1", path = "exercises/algorithm/algorithm1.rs" },
+  { name = "algorithm2", path = "exercises/algorithm/algorithm2.rs" },
+  { name = "algorithm3", path = "exercises/algorithm/algorithm3.rs" },
+  { name = "algorithm4", path = "exercises/algorithm/algorithm4.rs" },
+  { name = "algorithm5", path = "exercises/algorithm/algorithm5.rs" },
+  { name = "algorithm6", path = "exercises/algorithm/algorithm6.rs" },
+  { name = "algorithm7", path = "exercises/algorithm/algorithm7.rs" },
+  { name = "algorithm8", path = "exercises/algorithm/algorithm8.rs" },
+  { name = "algorithm9", path = "exercises/algorithm/algorithm9.rs" },
+  { name = "algorithm10", path = "exercises/algorithm/algorithm10.rs" },
 ]
-edition = "2021"
+
+[package]
+name = "rustlings-exercises"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+autobins = false
+autotests = false
+build = "exercises/tests/build.rs"
 
 [dependencies]
-argh = "0.1"
-indicatif = "0.16"
-console = "0.16"
-notify = "4.0"
-toml = "0.5"
-regex = "1.5"
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0.81"
-home = "0.5.3"
-glob = "0.3.0"
-tokio = { version = "1.21.2", features = ["full"] }
-
-[[bin]]
-name = "rustlings"
-path = "src/main.rs"
-
-[dev-dependencies]
-assert_cmd = "0.11.0"
-predicates = "1.0.1"
-glob = "0.3.0"

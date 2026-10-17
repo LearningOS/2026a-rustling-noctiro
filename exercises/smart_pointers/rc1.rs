@@ -8,9 +8,9 @@
 // Make this code compile by using the proper Rc primitives to express that the
 // sun has multiple owners.
 //
-// Execute `rustlings hint rc1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint rc1` or press `h` in watch mode for a hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::rc::Rc;
 

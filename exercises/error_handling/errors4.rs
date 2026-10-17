@@ -1,9 +1,9 @@
 // errors4.rs
 //
-// Execute `rustlings hint errors4` or use the `hint` watch subcommand for a
+// Execute `rustlings hint errors4` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
@@ -30,3 +30,5 @@ fn test_creation() {
     );
     assert_eq!(Err(CreationError::Zero), PositiveNonzeroInteger::new(0));
 }
+
+fn main() {}

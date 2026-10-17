@@ -1,9 +1,9 @@
 // iterators4.rs
 //
-// Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
+// Execute `rustlings hint iterators4` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub fn factorial(num: u64) -> u64 {
     // Complete this function to return the factorial of num
@@ -40,3 +40,5 @@ mod tests {
         assert_eq!(24, factorial(4));
     }
 }
+
+fn main() {}

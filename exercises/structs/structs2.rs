@@ -2,10 +2,10 @@
 //
 // Address all the TODOs to make the tests pass!
 //
-// Execute `rustlings hint structs2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint structs2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(Debug)]
 struct Order {
@@ -48,3 +48,5 @@ mod tests {
         assert_eq!(your_order.count, 1);
     }
 }
+
+fn main() {}

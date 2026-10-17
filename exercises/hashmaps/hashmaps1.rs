@@ -8,10 +8,10 @@
 //
 // Make me compile and pass the tests!
 //
-// Execute `rustlings hint hashmaps1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint hashmaps1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::collections::HashMap;
 
@@ -42,3 +42,5 @@ mod tests {
         assert!(basket.values().sum::<u32>() >= 5);
     }
 }
+
+fn main() {}

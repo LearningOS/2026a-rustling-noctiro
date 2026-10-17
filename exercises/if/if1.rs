@@ -1,6 +1,6 @@
 // if1.rs
 //
-// Execute `rustlings hint if1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint if1` or press `h` in watch mode for a hint.
 
 
 pub fn bigger(a: i32, b: i32) -> i32 {
@@ -31,3 +31,5 @@ mod tests {
         assert_eq!(42, bigger(32, 42));
     }
 }
+
+fn main() {}

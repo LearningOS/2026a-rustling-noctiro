@@ -5,10 +5,10 @@
 // going out of scope before it is used. Remember, references are borrows and do
 // not own their own data. What if their owner goes out of scope?
 //
-// Execute `rustlings hint lifetimes1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint lifetimes1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 fn longest(x: &str, y: &str) -> &str {
     if x.len() > y.len() {

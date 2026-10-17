@@ -6,7 +6,7 @@
 // an object of the implementor type. You can read more about it at
 // https://doc.rust-lang.org/std/str/trait.FromStr.html
 //
-// Execute `rustlings hint from_str` or use the `hint` watch subcommand for a
+// Execute `rustlings hint from_str` or press `h` in watch mode for a
 // hint.
 
 use std::num::ParseIntError;
@@ -31,7 +31,7 @@ enum ParsePersonError {
     ParseInt(ParseIntError),
 }
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 // Steps:
 // 1. If the length of the provided string is 0, an error should be returned

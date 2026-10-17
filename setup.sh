@@ -4,6 +4,15 @@
 set -eu
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
+if [ "$#" -eq 0 ]; then
+    start_exercises=1
+elif [ "$#" -eq 1 ] && [ "$1" = '--no-run' ]; then
+    start_exercises=0
+else
+    echo 'Usage: bash setup.sh [--no-run]' >&2
+    exit 2
+fi
+
 version=$(sed -n 's/^channel = "\([0-9][0-9.]*\)"$/\1/p' rust-toolchain.toml)
 if [[ ! $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     echo 'Expected an exact Rust version in rust-toolchain.toml.' >&2
@@ -24,7 +33,7 @@ if ! command -v rustup >/dev/null; then
     curl --fail --location --retry 2 --output tmp/setup/rustup-init.sh https://rsproxy.cn/rustup-init.sh
     sh tmp/setup/rustup-init.sh -y --default-toolchain none --profile minimal
 fi
-rustup toolchain install "$version" --profile minimal --component clippy --no-self-update --no-update
+rustup toolchain install "$version" --profile minimal --component clippy --component rustfmt --component rust-src --no-self-update
 
 # This file stays local; existing personal Cargo settings are preserved.
 if [ ! -e .cargo/config.toml ]; then
@@ -40,6 +49,10 @@ registry = "sparse+https://rsproxy.cn/index/"
 CONFIG
 fi
 
-echo 'Environment ready. Starting exercises; enter quit to exit.'
-cargo run -- watch
+cargo install --locked --force rustlings
+echo 'Environment ready.'
+if [ "$start_exercises" -eq 1 ]; then
+    echo 'Starting exercises; press q to exit.'
+    rustlings
+fi
 )

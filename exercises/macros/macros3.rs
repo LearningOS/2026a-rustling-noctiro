@@ -2,10 +2,10 @@
 //
 // Make me compile, without taking the macro out of the module!
 //
-// Execute `rustlings hint macros3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint macros3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 mod macros {
     macro_rules! my_macro {

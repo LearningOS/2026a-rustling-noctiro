@@ -10,9 +10,9 @@
 // Fix the unit tests by checking for Cow::Owned(_) and Cow::Borrowed(_) at the
 // TODO markers.
 //
-// Execute `rustlings hint cow1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint cow1` or press `h` in watch mode for a hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::borrow::Cow;
 
@@ -76,3 +76,5 @@ mod tests {
         }
     }
 }
+
+fn main() {}

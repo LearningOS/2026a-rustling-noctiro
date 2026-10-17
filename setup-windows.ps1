@@ -105,7 +105,7 @@
                 '--default-toolchain', 'none', '--profile', 'minimal')
         }
         Invoke-Checked 'rustup.exe' @('toolchain', 'install', $toolchain, '--profile', 'minimal',
-            '--component', 'clippy', '--no-self-update', '--no-update')
+            '--component', 'clippy', '--component', 'rustfmt', '--component', 'rust-src', '--no-self-update')
         Invoke-Checked 'rustup.exe' @('override', 'set', $toolchain, '--path', $PSScriptRoot)
 
         # This file stays local; existing personal Cargo settings are preserved.
@@ -123,8 +123,9 @@ registry = "sparse+https://rsproxy.cn/index/"
 '@
             [IO.File]::WriteAllText((Join-Path $PSScriptRoot '.cargo/config.toml'), $config + "`n")
         }
-        Write-Host 'Environment ready. Starting exercises; enter quit to exit.'
-        Invoke-Checked 'cargo.exe' @('run', '--', 'watch')
+        Invoke-Checked 'cargo.exe' @('install', '--locked', '--force', 'rustlings')
+        Write-Host 'Environment ready. Starting exercises; press q to exit.'
+        Invoke-Checked 'rustlings.exe' @()
     } finally {
         foreach ($name in $savedEnvironment.Keys) {
             if ($null -eq $savedEnvironment[$name]) {

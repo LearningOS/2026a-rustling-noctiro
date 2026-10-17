@@ -4,6 +4,10 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 Set-Location $root
 $setup = Join-Path $root 'setup-windows.ps1'
+$expectedToolchain = ([regex]::Match(
+    (Get-Content -Raw (Join-Path $root 'rust-toolchain.toml')),
+    '(?m)^channel\s*=\s*"(\d+\.\d+\.\d+)"\s*$'
+)).Groups[1].Value + '-x86_64-pc-windows-msvc'
 $tokens = $null
 $errors = $null
 [void][Management.Automation.Language.Parser]::ParseFile($setup, [ref]$tokens, [ref]$errors)
@@ -30,8 +34,12 @@ function rustup.exe {
 function cargo.exe {
     $script:Calls.Add('cargo ' + ($args -join ' '))
     if ($env:RUSTUP_DIST_SERVER -ne 'https://rsproxy.cn') { throw 'Mirror absent during Cargo invocation' }
-    if ($env:RUSTUP_TOOLCHAIN -ne '1.98.1-x86_64-pc-windows-msvc') { throw 'MSVC toolchain absent during Cargo invocation' }
+    if ($env:RUSTUP_TOOLCHAIN -ne $expectedToolchain) { throw 'MSVC toolchain absent during Cargo invocation' }
     $global:LASTEXITCODE = if ($script:FailStage -eq 'cargo') { 43 } else { 0 }
+}
+function rustlings.exe {
+    $script:Calls.Add('rustlings')
+    $global:LASTEXITCODE = if ($script:FailStage -eq 'runner') { 44 } else { 0 }
 }
 function vswhere.exe {
     $global:LASTEXITCODE = 0
@@ -77,7 +85,7 @@ function Start-Process {
 }
 try {
     foreach ($stage in @('success', 'msvc_install', 'msvc_modify', 'msvc_failure',
-            'msvc_reboot', 'msvc_missing', 'msvc_signature', 'install', 'cargo')) {
+            'msvc_reboot', 'msvc_missing', 'msvc_signature', 'install', 'cargo', 'runner')) {
         $script:FailStage = $stage
         $script:MsvcInstalled = -not $stage.StartsWith('msvc_')
         $script:Calls.Clear()
@@ -95,11 +103,12 @@ try {
             'msvc_signature' { 'signature verification failed' }
             'install' { 'exited with code 42' }
             'cargo' { 'exited with code 43' }
+            'runner' { 'exited with code 44' }
         }
         if ($caught -and $caught.Exception.Message -notlike "*$expectedError*") { throw $caught }
         if ($stage -in @('success', 'install', 'cargo', 'msvc_signature') -and
             $script:Calls.Contains('install Build Tools')) { throw 'Build Tools installed unnecessarily or without signature validation' }
-        if ($stage.StartsWith('msvc_') -and -not $shouldPass -and $script:Calls.Contains('cargo run -- watch')) {
+        if ($stage.StartsWith('msvc_') -and -not $shouldPass -and $script:Calls.Contains('rustlings')) {
             throw 'Cargo started after an unsuccessful Build Tools installation'
         }
         foreach ($name in $names) {
@@ -110,8 +119,9 @@ try {
         if ((Get-Location).Path -cne $root) { throw 'Working directory leaked' }
         if ([Net.ServicePointManager]::SecurityProtocol -ne $protocol) { throw 'TLS setting leaked' }
         if ($shouldPass) {
-            if (-not $script:Calls.Contains('cargo run -- watch')) { throw 'Watch was not started' }
-            if (-not $script:Calls.Contains('rustup override set 1.98.1-x86_64-pc-windows-msvc --path ' + $root)) {
+            if (-not $script:Calls.Contains('rustlings')) { throw 'Watch was not started' }
+            if (-not $script:Calls.Contains('cargo install --locked --force rustlings')) { throw 'Official Rustlings was not installed' }
+            if (-not $script:Calls.Contains('rustup override set ' + $expectedToolchain + ' --path ' + $root)) {
                 throw 'Repository override missing'
             }
             if ([IO.File]::ReadAllText($config) -notmatch 'sparse\+https://rsproxy.cn/index/') { throw 'Local mirror config missing' }

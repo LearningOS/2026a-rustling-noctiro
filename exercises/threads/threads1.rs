@@ -5,10 +5,10 @@
 // wait until all the spawned threads have finished and should collect their
 // return values into a vector.
 //
-// Execute `rustlings hint threads1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint threads1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::thread;
 use std::time::{Duration, Instant};

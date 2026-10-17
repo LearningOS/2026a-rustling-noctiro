@@ -6,10 +6,10 @@
 // 2. Get the remaining tests to pass by completing the result_with_list and
 //    list_of_results functions.
 //
-// Execute `rustlings hint iterators3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint iterators3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(Debug, PartialEq, Eq)]
 pub enum DivisionError {
@@ -88,3 +88,5 @@ mod tests {
         );
     }
 }
+
+fn main() {}

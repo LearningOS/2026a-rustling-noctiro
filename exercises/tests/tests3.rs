@@ -4,10 +4,10 @@
 // the test passes. Then write a second test that tests whether we get the
 // result we expect to get when we call `is_even(5)`.
 //
-// Execute `rustlings hint tests3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests3` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub fn is_even(num: i32) -> bool {
     num % 2 == 0
@@ -27,3 +27,5 @@ mod tests {
         assert!();
     }
 }
+
+fn main() {}

@@ -1,6 +1,6 @@
 // if3.rs
 //
-// Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint if3` or press `h` in watch mode for a hint.
 
 
 pub fn animal_habitat(animal: &str) -> &'static str {
@@ -52,3 +52,5 @@ mod tests {
         assert_eq!(animal_habitat("dinosaur"), "Unknown")
     }
 }
+
+fn main() {}

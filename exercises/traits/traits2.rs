@@ -6,9 +6,9 @@
 //
 // No boiler plate code this time, you can do this!
 //
-// Execute `rustlings hint traits2` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint traits2` or press `h` in watch mode for a hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 trait AppendBar {
     fn append_bar(self) -> Self;
@@ -27,3 +27,5 @@ mod tests {
         assert_eq!(foo.pop().unwrap(), String::from("Foo"));
     }
 }
+
+fn main() {}

@@ -1,6 +1,6 @@
 // functions3.rs
 //
-// Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
+// Execute `rustlings hint functions3` or press `h` in watch mode for a
 // hint.
 
 

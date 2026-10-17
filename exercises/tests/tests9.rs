@@ -19,7 +19,7 @@
 // the whole extern term can be omitted.
 //
 // Rust mangles symbols by default, just like C++ does. To suppress this behavior and make
-// those functions addressable by name, the attribute #[no_mangle] can be applied.
+// those functions addressable by name, the attribute #[unsafe(no_mangle)] can be applied.
 //
 // In this exercise, your task is to make the testcase able to call the `my_demo_function` in
 // module Foo. the `my_demo_function_alias` is an alias for `my_demo_function`, so the two
@@ -27,9 +27,9 @@
 //
 // You should NOT modify any existing code except for adding two lines of attributes.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
-extern "Rust" {
+unsafe extern "Rust" {
     fn my_demo_function(a: u32) -> u32;
     fn my_demo_function_alias(a: u32) -> u32;
 }
@@ -59,3 +59,5 @@ mod tests {
         }
     }
 }
+
+fn main() {}

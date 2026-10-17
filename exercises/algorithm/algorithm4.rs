@@ -3,7 +3,7 @@
 	This problem requires you to implement a basic interface for a binary tree
 */
 
-//I AM NOT DONE
+// TODO: Complete this exercise.
 use std::cmp::Ordering;
 use std::fmt::Debug;
 
@@ -121,6 +121,6 @@ mod tests {
             None => panic!("Root should not be None after insertion"),
         }
     }
-}    
+}
 
-
+fn main() {}

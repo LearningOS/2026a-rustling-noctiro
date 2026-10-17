@@ -1,9 +1,9 @@
 // options1.rs
 //
-// Execute `rustlings hint options1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint options1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 // This function returns how much icecream there is left in the fridge.
 // If it's before 10PM, there's 5 pieces left. At 10PM, someone eats them
@@ -37,3 +37,5 @@ mod tests {
         assert_eq!(icecreams, 5);
     }
 }
+
+fn main() {}

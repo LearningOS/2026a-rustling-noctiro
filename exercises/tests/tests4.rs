@@ -2,10 +2,10 @@
 //
 // Make sure that we're testing for the correct conditions!
 //
-// Execute `rustlings hint tests4` or use the `hint` watch subcommand for a
+// Execute `rustlings hint tests4` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 struct Rectangle {
     width: i32,
@@ -46,3 +46,5 @@ mod tests {
         let _rect = Rectangle::new(10, -10);
     }
 }
+
+fn main() {}

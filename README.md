@@ -2,6 +2,8 @@
 
 基于 [LearningOS 2026s Rustlings 课程模板](https://github.com/LearningOS/2026s-rustling-classroom-template)，共 **110 题，每题 1 分，总分 110 分**。
 
+已迁移至 **Rustlings 6.5.0** 的官方社区练习格式，使用 **Rust 1.99.1 / Edition 2024**。日常练习直接运行 `rustlings`。
+
 ## 使用流程
 
 1. 加入 [OpenCamp 秋冬季训练营](https://opencamp.cn/os2edu/camp/2026fall)，并绑定自己的 GitHub 账号。
@@ -25,9 +27,9 @@ git push origin main
 
 ## 计分规则
 
-每次提交都会重新运行全部题目，以本次实际通过题数计分。编译、运行或测试失败及超时的题目记 0 分；其他已通过题目正常计分并上传。计分不按提交次数累加，也不只检查注释是否删除。
+每次提交都会重新运行全部题目，以本次实际通过题数计分。编译、运行或测试失败及超时的题目记 0 分；其他已通过题目正常计分并上传。计分不按提交次数累加，也不读取本地进度文件。
 
-评测覆盖上游的编译运行、单元测试、Clippy 和构建脚本四类题目。单题限时 20 秒；评测工具构建失败或结果不完整时不上传成绩。
+评测覆盖编译运行、单元测试、Clippy 和构建脚本四类题目，与新版交互工具采用相同的 Cargo 检查步骤。单题限时 20 秒；环境检查失败或结果不完整时不上传成绩。
 
 Actions 中 **Test exercises and calculate score** 变红表示还有未完成的题目；**Save measured score and upload to OpenCamp** 成功表示成绩同步成功。每道题的原始日志和成绩明细保存在该次运行的附件中。
 
@@ -51,33 +53,44 @@ bash setup.sh
 
 此命令使用 Bash 执行配置脚本。macOS 需要先安装 Command Line Tools，Linux 需要系统 C 编译器。
 
-脚本会准备课程需要的 Rust 环境，并直接启动练习。按照终端提示修改题目，完成后移除对应的 `I AM NOT DONE` 注释。输入 `quit` 退出。
+脚本会安装仓库指定的 Rust 工具链、Clippy、rustfmt、标准库源码以及最新版官方 Rustlings，并直接启动练习。保存代码后自动检查，通过后按 `n` 进入下一题；按 `h` 查看提示，按 `q` 退出。
+
+已经有 Rust 环境时，也可以直接安装或更新 Rustlings：
+
+```sh
+cargo install --locked --force rustlings
+```
+
+Rustlings 工具独立安装；仓库中的 `Cargo.toml` 用于编译练习。
 
 ### 以后继续练习
 
 重新打开终端，进入作业仓库目录，运行：
 
 ```sh
-cargo run -- watch
+rustlings
 ```
 
 此命令启动练习检查器，保存题目后自动重新检查。
 
 ## 学习与本地检查
 
-练习位于 `exercises/<主题>/`。先阅读对应目录的 `README.md`、题目注释和编译器提示，再修改练习代码；测试通过后，移除该题的 `I AM NOT DONE` 注释，让交互工具继续下一题。
+练习位于 `exercises/<主题>/`，按 `info.toml` 顺序逐题进行。先阅读对应目录的 `README.md`、题目中的 TODO 和编译器提示，再修改当前题目。通过后按 `n` 继续；按 `l` 可以查看列表或选择其他题目。
 
-运行 `cargo run -- watch` 后，每次保存文件都会自动检查。也可以在仓库根目录使用以下命令：
+运行 `rustlings` 后，每次保存当前题目都会自动检查。也可以在仓库根目录使用以下命令：
 
 | 命令 | 用途 |
 | --- | --- |
-| `cargo run -- run variables1` | 只运行 `variables1`，可换成其他题目名 |
-| `cargo run -- hint variables1` | 查看该题提示 |
-| `cargo run -- run next` | 运行下一道未完成的题目 |
-| `cargo run -- hint next` | 查看下一道未完成题目的提示 |
-| `cargo run -- list` | 查看题目列表及完成状态 |
-| `cargo run -- verify` | 按练习列表检查一遍，然后退出 |
-| `cargo run -- lsp` | 生成 `rust-project.json`，供编辑器中的 rust-analyzer 识别各个练习 |
+| `rustlings run variables1` | 只运行 `variables1`，可换成其他题目名 |
+| `rustlings hint variables1` | 查看该题提示 |
+| `rustlings run` | 运行当前题目 |
+| `rustlings hint` | 查看当前题目的提示 |
+| `rustlings check-all` | 检查全部题目、更新进度并定位未完成题目 |
+| `rustlings dev update` | 修改题目清单后更新 Cargo targets |
+
+从旧版迁移或换电脑后，运行一次 `rustlings check-all`，按实际编译、测试和 Clippy 结果恢复进度。有未完成题目时，该命令会以非零状态退出，这是正常结果。新版使用本地的 `.rustlings-state.txt` 保存进度，该文件不提交到 Git。
+
+**编辑器支持**：安装 rust-analyzer 并打开仓库根目录即可。`Cargo.toml` 已包含全部题目，`rust-analyzer.toml` 提供检查配置。
 
 `exercises/quiz1.rs`、`quiz2.rs`、`quiz3.rs` 是阶段综合练习，用于巩固前面学过的内容。交互工具按仓库练习列表运行；下面的教材表用于安排阅读顺序。
 
@@ -85,11 +98,11 @@ cargo run -- watch
 
 ### 在浏览器中练习
 
-打开机器人分配给自己的作业仓库，选择 **Code → Codespaces → Create codespace on main**。等待仓库的开发环境初始化，然后在终端运行 `cargo run -- watch`，编辑 `exercises/` 中的题目。完成后仍需提交并 push，才会触发课程评测。
+打开机器人分配给自己的作业仓库，选择 **Code → Codespaces → Create codespace on main**。等待仓库的开发环境初始化，然后在终端运行 `rustlings`，编辑 `exercises/` 中的题目。完成后仍需提交并 push，才会触发课程评测。
 
 Codespaces 使用自己账号的可用额度；环境启动失败时，按本页环境配置在本地继续练习。
 
-使用 Nix 的同学可参考仓库保留的 [flake.nix](flake.nix) 和 [shell.nix](shell.nix) 开发环境配置。
+使用 Nix 的同学可通过 [flake.nix](flake.nix) 或 [shell.nix](shell.nix) 进入包含 Rustup 和 C 编译器的环境，再运行 `bash setup.sh --no-run` 安装课程工具链和最新版 Rustlings。首次 `nix develop` 会解析当前 nixpkgs 并生成锁文件。
 
 ### 遇到问题
 

@@ -6,10 +6,10 @@
 // construct to `Result` that can be used to express error conditions. Let's use
 // it!
 //
-// Execute `rustlings hint errors1` or use the `hint` watch subcommand for a
+// Execute `rustlings hint errors1` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 pub fn generate_nametag_text(name: String) -> Option<String> {
     if name.is_empty() {
@@ -41,3 +41,5 @@ mod tests {
         );
     }
 }
+
+fn main() {}

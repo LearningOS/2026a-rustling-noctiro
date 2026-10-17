@@ -16,9 +16,9 @@
 //
 // Note: the tests should not be changed
 //
-// Execute `rustlings hint box1` or use the `hint` watch subcommand for a hint.
+// Execute `rustlings hint box1` or press `h` in watch mode for a hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 #[derive(PartialEq, Debug)]
 pub enum List {

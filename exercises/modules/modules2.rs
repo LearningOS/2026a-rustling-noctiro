@@ -4,10 +4,10 @@
 // the 'use' and 'as' keywords. Fix these 'use' statements to make the code
 // compile.
 //
-// Execute `rustlings hint modules2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint modules2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 mod delicious_snacks {
     // TODO: Fix these use statements

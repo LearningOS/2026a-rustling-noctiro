@@ -3,10 +3,10 @@
 // In this exercise, you'll learn some of the unique advantages that iterators
 // can offer. Follow the steps to complete the exercise.
 //
-// Execute `rustlings hint iterators2` or use the `hint` watch subcommand for a
+// Execute `rustlings hint iterators2` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 // Step 1.
 // Complete the `capitalize_first` function.
@@ -61,3 +61,5 @@ mod tests {
         assert_eq!(capitalize_words_string(&words), "Hello World");
     }
 }
+
+fn main() {}

@@ -3,7 +3,7 @@
 	This problem requires you to implement a basic BFS algorithm
 */
 
-//I AM NOT DONE
+// TODO: Complete this exercise.
 use std::collections::VecDeque;
 
 // Define a graph
@@ -85,3 +85,4 @@ mod tests {
     }
 }
 
+fn main() {}

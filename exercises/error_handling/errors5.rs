@@ -19,10 +19,10 @@
 // What can we use to describe both errors? In other words, is there a trait
 // which both errors implement?
 //
-// Execute `rustlings hint errors5` or use the `hint` watch subcommand for a
+// Execute `rustlings hint errors5` or press `h` in watch mode for a
 // hint.
 
-// I AM NOT DONE
+// TODO: Complete this exercise.
 
 use std::error;
 use std::fmt;
